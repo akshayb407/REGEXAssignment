@@ -20,6 +20,18 @@ namespace UserRegistrationInRegex
             }
             else
                 Console.WriteLine("The First Name is Invalid");
+
+            ///last Name
+            Console.WriteLine("Enter Last Name");
+            string LastName = Console.ReadLine();
+            LastName lastName = new LastName();
+            if (lastName.ValidateLastName("Bhagwat"))
+            {
+                Console.WriteLine("The Last Name is Valid");
+            }
+            else
+                Console.WriteLine("The Last Name is Invalid");
+
         }
     }
 }
