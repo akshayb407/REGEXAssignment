@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace UserRegistrationInRegex
 {
@@ -13,7 +14,7 @@ namespace UserRegistrationInRegex
             FirstName firstName = new FirstName();
             Console.WriteLine("Enter First Nmae");
             string ValidateFirstName = Console.ReadLine();
-
+          
             if (firstName.ValidateFirstName("Akshay"))
             {
 
@@ -55,6 +56,18 @@ namespace UserRegistrationInRegex
             else
                 Console.WriteLine("The Mobile Number is Invalid");
 
+            ///Password 1 Minimum 8 character
+            Console.WriteLine("Enter Password");
+            string Password1Min8Character = Console.ReadLine();
+
+            Password1Min8Character Min8Char = new Password1Min8Character();
+
+            if (Min8Char.ValidatePassword1("Akshayab"))
+            {
+                Console.WriteLine("The Password1 is Valid");
+            }
+            else
+                Console.WriteLine("The Password1 is Invalid");
 
         }
     }
