@@ -44,6 +44,17 @@ namespace UserRegistrationInRegex
             else
                 Console.WriteLine("The Email is Invalid");
 
+            ///Mobile Format
+            Console.WriteLine("Enter Mobile Number");
+            string MobileFormat = Console.ReadLine();
+            MobileFormat mobileFormate = new MobileFormat();
+            if (mobileFormate.ValidateMobileNo("91 9919819801"))
+            {
+                Console.WriteLine("The Mobile Number is Valid");
+            }
+            else
+                Console.WriteLine("The Mobile Number is Invalid");
+
 
         }
     }
