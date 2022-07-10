@@ -11,10 +11,10 @@ namespace UserRegistrationInRegex
             Console.WriteLine("Welcome to Regular Expression Program");
 
             ///First Name
-           var FirstName firstName = new FirstName();
+            FirstName firstName = new FirstName();
             Console.WriteLine("Enter First Name");
             string ValidateFirstName = Console.ReadLine();
-          
+
             if (firstName.ValidateFirstName("Akshay"))
             {
 
@@ -68,27 +68,7 @@ namespace UserRegistrationInRegex
             }
             else
                 Console.WriteLine("The Password1 is Invalid");
-            ///Password 2 At Least One Upper Case
-            Console.WriteLine("Enter Password At Least One Upper Case ");
-            string Password2AtLeastOneUpperCase = Console.ReadLine();
-            var AtLeastOneUpperCase = new Password2AtLeastOneUpperCase();
-            if (AtLeastOneUpperCase.ValidatePassword2("AkshayBhagwat"))
-            {
-                Console.WriteLine("The Password2 is Valid");
-            }
-            else
-                Console.WriteLine("The Password2 is Invalid");
-
-            ///Password 3 At Least One Numeric Number
-            Console.WriteLine("Enter Password At Least One Numeric Number");
-            string Password3AtLeastOneNumericNumber = Console.ReadLine();
-            var AtLeastOneNumericNumber = new Password3AtLeastOneNumericNumber();
-            if (AtLeastOneNumericNumber.ValidatePassword3("Akshay07"))
-            {
-                Console.WriteLine("The Password3 is Valid");
-            }
-            else
-                Console.WriteLine("The Password3 is Invalid");
         }
+          
     }
 }
