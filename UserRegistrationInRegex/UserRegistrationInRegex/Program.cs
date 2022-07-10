@@ -60,7 +60,7 @@ namespace UserRegistrationInRegex
             Console.WriteLine("Enter Password");
             string Password1Min8Character = Console.ReadLine();
 
-            Password1Min8Character Min8Char = new Password1Min8Character();
+            Password1Minimum8Character Min8Char = new Password1Minimum8Character();
 
             if (Min8Char.ValidatePassword1("Akshayab"))
             {
