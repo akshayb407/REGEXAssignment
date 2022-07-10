@@ -69,7 +69,24 @@ namespace UserRegistrationInRegex
             else
                 Console.WriteLine("The Password1 is Invalid");
 
+<<<<<<< HEAD
             
+=======
+            ///Password 2 At Least One Upper Case
+            Console.WriteLine("Enter At Least One Upper Case ");
+            string Password2AtLeastOneUpperCase = Console.ReadLine();
+            var AtLeastOneUpperCase = new Password2AtLeastOneUpperCase();
+            if (AtLeastOneUpperCase.ValidatePassword2("AkshayBhagwat"))
+            {
+                Console.WriteLine("The Password2 is Valid");
+            }
+            else
+                Console.WriteLine("The Password2 is Invalid");
+
+
+
+
+>>>>>>> UC6
         }
     }
 }
