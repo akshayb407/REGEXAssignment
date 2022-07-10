@@ -12,7 +12,7 @@ namespace UserRegistrationInRegex
 
             ///First Name
             FirstName firstName = new FirstName();
-            Console.WriteLine("Enter First Nmae");
+            Console.WriteLine("Enter First Name");
             string ValidateFirstName = Console.ReadLine();
           
             if (firstName.ValidateFirstName("Akshay"))
@@ -68,6 +68,17 @@ namespace UserRegistrationInRegex
             }
             else
                 Console.WriteLine("The Password1 is Invalid");
+
+            ///Password2_AtLeastOneUpperCase
+            Console.WriteLine("Enter Password2_AtLeastOneUpperCase");
+            String Password2_AtLeastOneUpperCase = Console.ReadLine();
+            var AtLeastOneUpperCase = new Password2_AtLeastOneUpperCase();
+            if (AtLeastOneUpperCase.ValidatePassword2("Nitishkumar"))
+            {
+                Console.WriteLine("The Password2 is Valid");
+            }
+            else
+                Console.WriteLine("The Password2 is Invalid");
 
         }
     }
