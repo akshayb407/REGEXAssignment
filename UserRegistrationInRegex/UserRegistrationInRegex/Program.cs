@@ -104,6 +104,14 @@ namespace UserRegistrationInRegex
             else
                 Console.WriteLine("The Password4 is Invalid");
 
+            ///Sample Emails
+            SampleEmails sampleEmails = new SampleEmails();
+            if (sampleEmails.ValidateEmail("abc@gmail.com.com"))
+            {
+                Console.WriteLine("The Sample Email is Valid");
+            }
+            else
+                Console.WriteLine("The Sample Email is Invalid");
 
         }
     }
