@@ -69,9 +69,8 @@ namespace UserRegistrationInRegex
             else
                 Console.WriteLine("The Password1 is Invalid");
 
-<<<<<<< HEAD
+
             
-=======
             ///Password 2 At Least One Upper Case
             Console.WriteLine("Enter At Least One Upper Case ");
             string Password2AtLeastOneUpperCase = Console.ReadLine();
@@ -83,10 +82,29 @@ namespace UserRegistrationInRegex
             else
                 Console.WriteLine("The Password2 is Invalid");
 
+            ///Password 3 At Least One Numeric Number
+            Console.WriteLine("Enter Password At Least One Numeric Number");
+            string Password3AtLeastOneNumericNumber = Console.ReadLine();
+            var AtLeastOneNumericNumber = new Password3AtLeastOneNumericNumber();
+            if (AtLeastOneNumericNumber.ValidatePassword3("Akshay07"))
+            {
+                Console.WriteLine("The Password3 is Valid");
+            }
+            else
+                Console.WriteLine("The Password3 is Invalid");
+
+            ///Password 4 Exactly One Special Character
+            Console.WriteLine("Enter Password Exactly One Special Character");
+            string Password4ExactlyOneSpecialCharacter = Console.ReadLine();
+            Password4ExactlyOneSpecialCharacter ExactlyOneSpecialCharacter = new Password4ExactlyOneSpecialCharacter();
+            if (ExactlyOneSpecialCharacter.ValidatePassword4("Akshayab@1234"))
+            {
+                Console.WriteLine("The Password4 is Valid");
+            }
+            else
+                Console.WriteLine("The Password4 is Invalid");
 
 
-
->>>>>>> UC6
         }
     }
 }
